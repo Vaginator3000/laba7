@@ -22,7 +22,7 @@ namespace laba7
         {
             brand = "";
             color = "";
-            cost = 0;
+            cost = 1;
         }
         public void init(String _brand, String color, int _cost)
         {
