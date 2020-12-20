@@ -43,5 +43,24 @@ namespace laba7
             Console.WriteLine("Стоимость: ");
             cost = Convert.ToInt32(Console.ReadLine());
         }
+
+        public void costInDollars_ref(ref int dcost)
+        {
+            dcost = cost * 73;
+        }
+
+        public void costInDollars_out(out int dcost)
+        {
+            dcost = cost * 73;
+        }
+
+        public static Auto operator +(Auto a, Auto b)
+        {
+            return new Auto { brand = a.brand + "-" + b.brand, color = a.color + "-" + b.color, Cost = a.Cost + b.Cost };
+        }
+        public static Auto operator ++(Auto a)
+        {
+            return new Auto { brand = a.brand, color = a.color, Cost = a.Cost + 1};
+        }
     }
 }
