@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace laba7
 {
-    class Auto
+    struct Auto
     {
         String brand;
         String color;

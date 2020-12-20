@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace laba7
 {
-    class Autosale
+    struct Autosale
     {
-        Auto car = new Auto();
+        Auto car;
         int count;
         public int Count
         {

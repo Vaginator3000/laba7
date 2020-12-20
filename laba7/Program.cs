@@ -18,16 +18,23 @@ namespace laba7
                 car[i].init("car" + i.ToString(), "color" + i.ToString(), i * 10000 + i);
             }
 
-           /* car.init("Ford", "black", 300000);
-            car.display();
-            car.read();
-            car.display();*/
+            car[1] = car[2];
+            car[1].Cost = 1000;
 
-            Autosale asale = new Autosale();
+            for (int i = 0; i < car.Length; i++)
+            {
+                car[i].display();
+            }
+            /* car.init("Ford", "black", 300000);
+             car.display();
+             car.read();
+             car.display();*/
+
+          /*  Autosale asale = new Autosale();
             asale.init(car[1], 3);
             asale.display();
             asale.read();
-            asale.display();
+            asale.display();*/
         }
     }
 }
